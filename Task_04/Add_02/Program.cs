@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Task_04
+namespace Add_02
 {
     class Program
     {
@@ -9,8 +9,8 @@ namespace Task_04
             ConsoleKeyInfo cki;
 
             SimpleCalculator sc = new SimpleCalculator();
-            Console.WriteLine("Вводите слагаемые через запятую! Используйте только целые числа!\n" +
-                              "При вводе большего количества чисел учитываться будут первые два!\n" +
+            Console.WriteLine("Вводите слагаемые через запятую!\n" +
+                              "Используйте только целые числа!\n" +
                               "Для выхода из программы нажмите Esq");
             while (true)
             {
@@ -18,7 +18,7 @@ namespace Task_04
                 {
                     cki = Console.ReadKey(true);
                     if (cki.Key == ConsoleKey.Escape) break;
-                    int sum = sc.AddOfTwoNumbers(Console.ReadLine());
+                    int sum = sc.AddOfSomeNumbers(Console.ReadLine());
                     Console.WriteLine(sum);
 
                 }
